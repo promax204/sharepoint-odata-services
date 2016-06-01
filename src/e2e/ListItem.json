@@ -1,0 +1,90 @@
+{
+    "d": {
+        "__metadata": {
+            "id": "2bbdaee6-1172-4e36-9f90-ce35ec9b6207",
+            "uri": "http://<site url>/_api/Web/Lists(guid'a290086b-2d43-4151-add4-893474a930a9')/Items(2)",
+            "etag": "\"1\"",
+            "type": "SP.Data.Team_x0020_tasksListItem"
+        },
+        "FirstUniqueAncestorSecurableObject": {
+            "__deferred": {
+                "uri": "http://<site url>/_api/Web/Lists(guid'a290086b-2d43-4151-add4-893474a930a9')/Items(2)/FirstUniqueAncestorSecurableObject"
+            }
+        },
+        "RoleAssignments": {
+            "__deferred": {
+                "uri": "http://<site url>/_api/Web/Lists(guid'a290086b-2d43-4151-add4-893474a930a9')/Items(2)/RoleAssignments"
+            }
+        },
+        "AttachmentFiles": {
+            "__deferred": {
+                "uri": "http://<site url>/_api/Web/Lists(guid'a290086b-2d43-4151-add4-893474a930a9')/Items(2)/AttachmentFiles"
+            }
+        },
+        "ContentType": {
+            "__deferred": {
+                "uri": "http://<site url>/_api/Web/Lists(guid'a290086b-2d43-4151-add4-893474a930a9')/Items(2)/ContentType"
+            }
+        },
+        "FieldValuesAsHtml": {
+            "__deferred": {
+                "uri": "http://<site url>/_api/Web/Lists(guid'a290086b-2d43-4151-add4-893474a930a9')/Items(2)/FieldValuesAsHtml"
+            }
+        },
+        "FieldValuesAsText": {
+            "__deferred": {
+                "uri": "http://<site url>/_api/Web/Lists(guid'a290086b-2d43-4151-add4-893474a930a9')/Items(2)/FieldValuesAsText"
+            }
+        },
+        "FieldValuesForEdit": {
+            "__deferred": {
+                "uri": "http://<site url>/_api/Web/Lists(guid'a290086b-2d43-4151-add4-893474a930a9')/Items(2)/FieldValuesForEdit"
+            }
+        },
+        "File": {
+            "__deferred": {
+                "uri": "http://<site url>/_api/Web/Lists(guid'a290086b-2d43-4151-add4-893474a930a9')/Items(2)/File"
+            }
+        },
+        "Folder": {
+            "__deferred": {
+                "uri": "http://<site url>/_api/Web/Lists(guid'a290086b-2d43-4151-add4-893474a930a9')/Items(2)/Folder"
+            }
+        },
+        "ParentList": {
+            "__deferred": {
+                "uri": "http://<site url>/_api/Web/Lists(guid'a290086b-2d43-4151-add4-893474a930a9')/Items(2)/ParentList"
+            }
+        },
+        "FileSystemObjectType": 0,
+        "Id": 2,
+        "ID": 2,
+        "ContentTypeId": "0x0108004F8963A897E4E64A83E990C1B6B65770",
+        "Title": "Assign teams",
+        "Modified": "2013-09-03T17:50:30Z",
+        "Created": "2013-09-03T17:50:30Z",
+        "AuthorId": 1073741823,
+        "EditorId": 1073741823,
+        "OData__UIVersionString": "1.0",
+        "Attachments": false,
+        "GUID": "ce6e516e-2da4-4a3e-9325-daf7d7f61490",
+        "PredecessorsId": {
+            "results": [
+                1
+            ]
+        },
+        "Priority": "(2) Normal",
+        "Status": "Not Started",
+        "PercentComplete": 0,
+        "AssignedToId": {
+            "results": [
+                1
+            ]
+        },
+        "Body": null,
+        "StartDate": "2014-01-02T08:00:00Z",
+        "DueDate": "2014-01-02T08:00:00Z",
+        "Checkmark": "0",
+        "RelatedItems": null
+    }
+}

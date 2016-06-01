@@ -1,3 +1,10 @@
 <h1>
   {{title}}
 </h1>
+<button class="btn btn-default" type="button" (click)="showLists = !showLists">Toggle Site Lists</button>
+<div *ngIf="showLists">
+  <app-sp-lists></app-sp-lists>
+</div>
+<hr>
+
+<app-list-items></app-list-items>

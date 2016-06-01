@@ -1,0 +1,28 @@
+{
+    "d": {
+        "__metadata": {
+            "id": "http://<site url>/_api/Web/GetUserById(16)",
+            "uri": "http://<site url>/_api/Web/GetUserById(16)",
+            "type": "SP.User"
+        },
+        "Groups": {
+            "__deferred": {
+                "uri": "http://<site url>/_api/Web/GetUserById(16)/Groups"
+            }
+        },
+        "Id": 16,
+        "IsHiddenInUI": false,
+        "LoginName": "i:0#.w|domain\\user",
+        "Title": "User Display Name",
+        "PrincipalType": 1,
+        "Email": "user@company.com",
+        "IsSiteAdmin": false,
+        "UserId": {
+            "__metadata": {
+                "type": "SP.UserIdInfo"
+            },
+            "NameId": "s-0-0-00-000000-0000000000-0000000000-000000",
+            "NameIdIssuer": "issuer id"
+        }
+    }
+}

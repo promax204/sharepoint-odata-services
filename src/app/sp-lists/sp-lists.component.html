@@ -1,0 +1,21 @@
+<div class="row">
+  <div class="col-sm-6">
+    <table>
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Title</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let list of lists$ | async">
+          <td><a (click)="displayListDetails(list.Id)">{{ list.Id }}</a></td>
+          <td>{{ list.Title }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="col-sm-6">
+    <app-list-details [listId$]="selectedListId$"></app-list-details>
+  </div>
+</div>

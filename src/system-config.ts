@@ -3,10 +3,12 @@
  **********************************************************************************************/
 /** Map relative paths to URLs. */
 const map: any = {
+  'lodash': 'vendor/lodash',
 };
 
 /** User packages configuration. */
 const packages: any = {
+  'lodash': { main: 'index' },
 };
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
@@ -29,12 +31,15 @@ const barrels: string[] = [
   // App specific barrels.
   'app',
   'app/shared',
+  'app/sp-lists',
+  'app/list-details',
+  'app/list-items',
   /** @cli-barrel */
 ];
 
 const cliSystemConfigPackages: any = {};
 barrels.forEach((barrelName: string) => {
-  cliSystemConfigPackages[barrelName] = { main: 'index' };
+  cliSystemConfigPackages[ barrelName ] = { main: 'index' };
 });
 
 /** Type declaration for ambient System. */

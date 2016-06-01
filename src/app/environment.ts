@@ -3,5 +3,6 @@
 // The build system defaults to the dev environment
 
 export const environment = {
+  apiPath: '',
   production: false
 };

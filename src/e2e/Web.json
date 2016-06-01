@@ -1,0 +1,201 @@
+{
+    "d": {
+        "__metadata": {
+            "id": "https://<site url>/_api/Web",
+            "uri": "https://<site url>/_api/Web",
+            "type": "SP.Web"
+        },
+        "FirstUniqueAncestorSecurableObject": {
+            "__deferred": {
+                "uri": "https://<site url>/_api/Web/FirstUniqueAncestorSecurableObject"
+            }
+        },
+        "RoleAssignments": {
+            "__deferred": {
+                "uri": "https://<site url>/_api/Web/RoleAssignments"
+            }
+        },
+        "AllProperties": {
+            "__deferred": {
+                "uri": "https://<site url>/_api/Web/AllProperties"
+            }
+        },
+        "AssociatedMemberGroup": {
+            "__deferred": {
+                "uri": "https://<site url>/_api/Web/AssociatedMemberGroup"
+            }
+        },
+        "AssociatedOwnerGroup": {
+            "__deferred": {
+                "uri": "https://<site url>/_api/Web/AssociatedOwnerGroup"
+            }
+        },
+        "AssociatedVisitorGroup": {
+            "__deferred": {
+                "uri": "https://<site url>/_api/Web/AssociatedVisitorGroup"
+            }
+        },
+        "AvailableContentTypes": {
+            "__deferred": {
+                "uri": "https://<site url>/_api/Web/AvailableContentTypes"
+            }
+        },
+        "AvailableFields": {
+            "__deferred": {
+                "uri": "https://<site url>/_api/Web/AvailableFields"
+            }
+        },
+        "ContentTypes": {
+            "__deferred": {
+                "uri": "https://<site url>/_api/Web/ContentTypes"
+            }
+        },
+        "CurrentUser": {
+            "__deferred": {
+                "uri": "https://<site url>/_api/Web/CurrentUser"
+            }
+        },
+        "DescriptionResource": {
+            "__deferred": {
+                "uri": "https://<site url>/_api/Web/DescriptionResource"
+            }
+        },
+        "EventReceivers": {
+            "__deferred": {
+                "uri": "https://<site url>/_api/Web/EventReceivers"
+            }
+        },
+        "Features": {
+            "__deferred": {
+                "uri": "https://<site url>/_api/Web/Features"
+            }
+        },
+        "Fields": {
+            "__deferred": {
+                "uri": "https://<site url>/_api/Web/Fields"
+            }
+        },
+        "Folders": {
+            "__deferred": {
+                "uri": "https://<site url>/_api/Web/Folders"
+            }
+        },
+        "Lists": {
+            "__deferred": {
+                "uri": "https://<site url>/_api/Web/Lists"
+            }
+        },
+        "ListTemplates": {
+            "__deferred": {
+                "uri": "https://<site url>/_api/Web/ListTemplates"
+            }
+        },
+        "Navigation": {
+            "__deferred": {
+                "uri": "https://<site url>/_api/Web/Navigation"
+            }
+        },
+        "ParentWeb": {
+            "__deferred": {
+                "uri": "https://<site url>/_api/Web/ParentWeb"
+            }
+        },
+        "PushNotificationSubscribers": {
+            "__deferred": {
+                "uri": "https://<site url>/_api/Web/PushNotificationSubscribers"
+            }
+        },
+        "RecycleBin": {
+            "__deferred": {
+                "uri": "https://<site url>/_api/Web/RecycleBin"
+            }
+        },
+        "RegionalSettings": {
+            "__deferred": {
+                "uri": "https://<site url>/_api/Web/RegionalSettings"
+            }
+        },
+        "RoleDefinitions": {
+            "__deferred": {
+                "uri": "https://<site url>/_api/Web/RoleDefinitions"
+            }
+        },
+        "RootFolder": {
+            "__deferred": {
+                "uri": "https://<site url>/_api/Web/RootFolder"
+            }
+        },
+        "SiteGroups": {
+            "__deferred": {
+                "uri": "https://<site url>/_api/Web/SiteGroups"
+            }
+        },
+        "SiteUserInfoList": {
+            "__deferred": {
+                "uri": "https://<site url>/_api/Web/SiteUserInfoList"
+            }
+        },
+        "SiteUsers": {
+            "__deferred": {
+                "uri": "https://<site url>/_api/Web/SiteUsers"
+            }
+        },
+        "ThemeInfo": {
+            "__deferred": {
+                "uri": "https://<site url>/_api/Web/ThemeInfo"
+            }
+        },
+        "TitleResource": {
+            "__deferred": {
+                "uri": "https://<site url>/_api/Web/TitleResource"
+            }
+        },
+        "UserCustomActions": {
+            "__deferred": {
+                "uri": "https://<site url>/_api/Web/UserCustomActions"
+            }
+        },
+        "Webs": {
+            "__deferred": {
+                "uri": "https://<site url>/_api/Web/Webs"
+            }
+        },
+        "WebInfos": {
+            "__deferred": {
+                "uri": "https://<site url>/_api/Web/WebInfos"
+            }
+        },
+        "WorkflowAssociations": {
+            "__deferred": {
+                "uri": "https://<site url>/_api/Web/WorkflowAssociations"
+            }
+        },
+        "WorkflowTemplates": {
+            "__deferred": {
+                "uri": "https://<site url>/_api/Web/WorkflowTemplates"
+            }
+        },
+        "AllowRssFeeds": true,
+        "AppInstanceId": "d025f690-8281-4cb7-ab11-04793e232661",
+        "Configuration": 0,
+        "Created": "2014-02-27T20:08:25",
+        "CustomMasterUrl": "/_catalogs/masterpage/app.master",
+        "Description": "",
+        "DocumentLibraryCalloutOfficeWebAppPreviewersDisabled": false,
+        "EnableMinimalDownload": false,
+        "Id": "ba0bfd3d-ba13-4400-aacf-f60d56eecfbc",
+        "Language": 1033,
+        "LastItemModifiedDate": "2014-02-27T20:08:28Z",
+        "MasterUrl": "/_catalogs/masterpage/app.master",
+        "QuickLaunchEnabled": true,
+        "RecycleBinEnabled": true,
+        "ServerRelativeUrl": "",
+        "SyndicationEnabled": true,
+        "Title": "ParseUm",
+        "TreeViewEnabled": false,
+        "UIVersion": 15,
+        "UIVersionConfigurationEnabled": false,
+        "Url": "https://<site url>",
+        "WebTemplate": "APP"
+    }
+}

@@ -1,0 +1,21 @@
+
+<div class="row">
+  <div class="col-sm-9">
+    <input type="text" class="form-control" #listName>
+  </div>
+  <div class="col-sm-3">
+    <button class="btn btn-default" type="button" (click)="getListItems(listName.value)">Get List Items</button>
+  </div>
+</div>
+<table class="table">
+  <thead>
+    <tr>
+      <th *ngFor="let column of keys">{{ column }}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let listItem of listItems$ | async">
+      <td *ngFor="let column of keys">{{ listItem[column] | json }}</td>
+    </tr>
+  </tbody>
+</table>
