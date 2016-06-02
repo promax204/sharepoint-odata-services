@@ -47,7 +47,7 @@ export class HttpService {
 
   getLists(): Observable<SPList[]> {
     if (environment.production) {
-      let endpoint = `${environment.apiPath}/Web/Lists`;
+      const endpoint = `${environment.apiPath}/Web/Lists`;
       return this.getData(endpoint);
     } else {
       return this.http.get('../e2e/Lists.json')
@@ -57,7 +57,7 @@ export class HttpService {
   }
   getList(listId: string): Observable<SPList> {
     if (environment.production) {
-      let endpoint = `${environment.apiPath}/Web/Lists(guid'${listId}')`;
+      const endpoint = `${environment.apiPath}/Web/Lists(guid'${listId}')`;
       return this.getData(endpoint);
     } else {
       return this.http.get('../e2e/List.json')
@@ -67,7 +67,7 @@ export class HttpService {
   }
   getListItems(listId: string): Observable<any> {
     if (environment.production) {
-      let endpoint = `${environment.apiPath}/Web/Lists(guid'${listId}')/Items`;
+      const endpoint = `${environment.apiPath}/Web/Lists(guid'${listId}')/Items`;
       return this.getData(endpoint);
     } else {
       return this.http.get('../e2e/ListItems.json')
@@ -77,7 +77,7 @@ export class HttpService {
   }
   getListItem(listId: string, listItemId: number): Observable<any> {
     if (environment.production) {
-      let endpoint = `${environment.apiPath}/Web/Lists(guid'${listId}')/Items(${listItemId})`;
+      const endpoint = `${environment.apiPath}/Web/Lists(guid'${listId}')/Items(${listItemId})`;
       return this.getData(endpoint);
     } else {
       return this.http.get('../e2e/ListItem.json')
@@ -86,13 +86,12 @@ export class HttpService {
     }
   }
 
-  getCurrentUsersProfile() {
+  getCurrentUser() {
     if (environment.production) {
-      let endpoint = `${environment.apiPath}/sp.userprofiles.profileloader.getprofileloader/getuserprofile`;
-      // let headers = Object.assign({}, defaultHeaders, {"X-RequestDigest": })
-      // return this.http.post(endpoint, ;
+      const endpoint = `${environment.apiPath}/Web/CurrentUser?$Select=Id,Name`;
+      return this.getData(endpoint);
     } else {
-      return this.http.get('../e2e/UserProfile.json')
+      return this.http.get('../e2e/CurrentUser.json')
         .map(response => response.json())
         .map(this.stripJSONWrapper)
     }
@@ -100,12 +99,11 @@ export class HttpService {
 
   getClientContext(): Observable<ContextWebInformation> {
     if (environment.production) {
-      let endpoint = `${environment.apiPath}/contextinfo`;
+      const endpoint = `${environment.apiPath}/contextinfo`;
       return this.http.post(endpoint, '', { headers: new Headers(defaultHeaders) })
         .map(response => response.json())
         .map(this.stripJSONWrapper)
-        .do(ctx => this.requestDigest$.next(ctx.GetContextWebInformation.FormDigestValue));
-
+        .do(clientContext => console.log('Client Context: ', clientContext));
     } else {
       return this.http.get('../e2e/ClientContext.json')
         .map(response => response.json())
@@ -113,9 +111,30 @@ export class HttpService {
     }
   }
 
+  createListItem(listId: string, listItem: any) {
+      // Update existing list item
+      const endpoint = `${environment.apiPath}/Web/Lists(guid'${listId}')/Items(${listItem.Id})`;
+  }
 
-  private post(endpoint: string, body: Object, method: 'POST' | 'DELETE' | 'MERGE' | 'PUT' = 'MERGE') {
+  saveListItem(listItem: any) {
+    if (environment.production) {
+      const endpoint = listItem.__metadata.uri;
+      return this.post(endpoint, listItem, 'POST')
+        .map(response => response.json())
+        .map(this.stripJSONWrapper);
+
+    } else {
+      // Return saved record with updated modified date
+      let modifiedDate = new Date();
+      let updatedListItem = Object.assign({}, listItem, { Modified: modifiedDate.toJSON() });
+      return Observable.of(updatedListItem);
+    }
+  }
+
+
+  private post(endpoint: string, body: Object = '', method: 'POST' | 'DELETE' | 'MERGE' | 'PUT' = 'MERGE') {
     return this.requestDigest$
+      .filter(requestDigest => !!requestDigest)
       .take(1)
       .flatMap(requestDigest => {
         

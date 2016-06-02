@@ -1,0 +1,31 @@
+{
+    "d": {
+        "__metadata": {
+            "id": "https://<site url>/_api/sp.userprofiles.profileloader.getprofileloader/getuserprofile",
+            "uri": "https://<site url>/_api/sp.userprofiles.profileloader.getprofileloader/getuserprofile",
+            "type": "SP.UserProfiles.UserProfile"
+        },
+        "FollowedContent": {
+            "__deferred": {
+                "uri": "https://<site url>/_api/sp.userprofiles.profileloader.getprofileloader/getuserprofile/FollowedContent"
+            }
+        },
+        "PersonalSite": {
+            "__deferred": {
+                "uri": "https://<site url>/_api/sp.userprofiles.profileloader.getprofileloader/getuserprofile/PersonalSite"
+            }
+        },
+        "AccountName": "i:0#.f|membership|user@domain.onmicrosoft.com",
+        "DisplayName": "User Name",
+        "O15FirstRunExperience": 16,
+        "PersonalSiteCapabilities": 14,
+        "PersonalSiteFirstCreationError": "Personal Site already exists.",
+        "PersonalSiteFirstCreationTime": "2014-03-23T17:37:48",
+        "PersonalSiteInstantiationState": 2,
+        "PersonalSiteLastCreationTime": "2014-03-23T17:38:34",
+        "PersonalSiteNumberOfRetries": 2,
+        "PictureImportEnabled": true,
+        "PublicUrl": "https://domain-my.sharepoint.com:443/Person.aspx?accountname=i%3A0%23%2Ef%7Cmembership%7Cuser%40domain%2Eonmicrosoft%2Ecom",
+        "UrlToCreatePersonalSite": "https://domain-my.sharepoint.com/personal/user_domain_onmicrosoft_com/"
+    }
+}

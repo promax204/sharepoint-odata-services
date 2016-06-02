@@ -34,6 +34,7 @@ const barrels: string[] = [
   'app/sp-lists',
   'app/list-details',
   'app/list-items',
+  'app/list-item-form',
   /** @cli-barrel */
 ];
 

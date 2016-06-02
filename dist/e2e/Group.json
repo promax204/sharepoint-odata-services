@@ -1,0 +1,31 @@
+{
+    "d": {
+        "__metadata": {
+            "id": "https://<site url>/_api/Web/SiteGroups/GetById(5)",
+            "uri": "https://<site url>/_api/Web/SiteGroups/GetById(5)",
+            "type": "SP.Group"
+        },
+        "Owner": {
+            "__deferred": {
+                "uri": "https://<site url>/_api/Web/SiteGroups/GetById(5)/Owner"
+            }
+        },
+        "Users": {
+            "__deferred": {
+                "uri": "https://<site url>/_api/Web/SiteGroups/GetById(5)/Users"
+            }
+        },
+        "Id": 5,
+        "IsHiddenInUI": false,
+        "LoginName": "Members",
+        "Title": "Members",
+        "PrincipalType": 8,
+        "AllowMembersEditMembership": false,
+        "AllowRequestToJoinLeave": false,
+        "AutoAcceptRequestToJoinLeave": false,
+        "Description": "Use this group to grant people contribute permissions to the SharePoint site: ",
+        "OnlyAllowMembersViewMembership": false,
+        "OwnerTitle": "Owners",
+        "RequestToJoinLeaveEmailSetting": ""
+    }
+}

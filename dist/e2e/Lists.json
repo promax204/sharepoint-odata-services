@@ -1,0 +1,236 @@
+{
+    "d": {
+        "results": [
+            {
+                "__metadata": {
+                    "id": "https://<site url>/_api/Web/Lists(guid'51925dd7-2108-481a-b1ef-4bfa4e69d48b')",
+                    "uri": "https://<site url>/_api/Web/Lists(guid'51925dd7-2108-481a-b1ef-4bfa4e69d48b')",
+                    "etag": "\"6\"",
+                    "type": "SP.List"
+                },
+                "FirstUniqueAncestorSecurableObject": {
+                    "__deferred": {
+                        "uri": "https://<site url>/_api/Web/Lists(guid'51925dd7-2108-481a-b1ef-4bfa4e69d48b')/FirstUniqueAncestorSecurableObject"
+                    }
+                },
+                "RoleAssignments": {
+                    "__deferred": {
+                        "uri": "https://<site url>/_api/Web/Lists(guid'51925dd7-2108-481a-b1ef-4bfa4e69d48b')/RoleAssignments"
+                    }
+                },
+                "ContentTypes": {
+                    "__deferred": {
+                        "uri": "https://<site url>/_api/Web/Lists(guid'51925dd7-2108-481a-b1ef-4bfa4e69d48b')/ContentTypes"
+                    }
+                },
+                "DefaultView": {
+                    "__deferred": {
+                        "uri": "https://<site url>/_api/Web/Lists(guid'51925dd7-2108-481a-b1ef-4bfa4e69d48b')/DefaultView"
+                    }
+                },
+                "EventReceivers": {
+                    "__deferred": {
+                        "uri": "https://<site url>/_api/Web/Lists(guid'51925dd7-2108-481a-b1ef-4bfa4e69d48b')/EventReceivers"
+                    }
+                },
+                "Fields": {
+                    "__deferred": {
+                        "uri": "https://<site url>/_api/Web/Lists(guid'51925dd7-2108-481a-b1ef-4bfa4e69d48b')/Fields"
+                    }
+                },
+                "Forms": {
+                    "__deferred": {
+                        "uri": "https://<site url>/_api/Web/Lists(guid'51925dd7-2108-481a-b1ef-4bfa4e69d48b')/Forms"
+                    }
+                },
+                "InformationRightsManagementSettings": {
+                    "__deferred": {
+                        "uri": "https://<site url>/_api/Web/Lists(guid'51925dd7-2108-481a-b1ef-4bfa4e69d48b')/InformationRightsManagementSettings"
+                    }
+                },
+                "Items": {
+                    "__deferred": {
+                        "uri": "https://<site url>/_api/Web/Lists(guid'51925dd7-2108-481a-b1ef-4bfa4e69d48b')/Items"
+                    }
+                },
+                "ParentWeb": {
+                    "__deferred": {
+                        "uri": "https://<site url>/_api/Web/Lists(guid'51925dd7-2108-481a-b1ef-4bfa4e69d48b')/ParentWeb"
+                    }
+                },
+                "RootFolder": {
+                    "__deferred": {
+                        "uri": "https://<site url>/_api/Web/Lists(guid'51925dd7-2108-481a-b1ef-4bfa4e69d48b')/RootFolder"
+                    }
+                },
+                "UserCustomActions": {
+                    "__deferred": {
+                        "uri": "https://<site url>/_api/Web/Lists(guid'51925dd7-2108-481a-b1ef-4bfa4e69d48b')/UserCustomActions"
+                    }
+                },
+                "Views": {
+                    "__deferred": {
+                        "uri": "https://<site url>/_api/Web/Lists(guid'51925dd7-2108-481a-b1ef-4bfa4e69d48b')/Views"
+                    }
+                },
+                "WorkflowAssociations": {
+                    "__deferred": {
+                        "uri": "https://<site url>/_api/Web/Lists(guid'51925dd7-2108-481a-b1ef-4bfa4e69d48b')/WorkflowAssociations"
+                    }
+                },
+                "AllowContentTypes": true,
+                "BaseTemplate": 160,
+                "BaseType": 0,
+                "ContentTypesEnabled": true,
+                "Created": "2013-06-10T17:14:49Z",
+                "DefaultContentApprovalWorkflowId": "00000000-0000-0000-0000-000000000000",
+                "Description": "Use this list to track access requests to a site or uniquely permissioned items in the site.",
+                "Direction": "none",
+                "DocumentTemplateUrl": null,
+                "DraftVersionVisibility": 0,
+                "EnableAttachments": false,
+                "EnableFolderCreation": false,
+                "EnableMinorVersions": false,
+                "EnableModeration": false,
+                "EnableVersioning": true,
+                "EntityTypeName": "Access_x0020_Requests",
+                "ForceCheckout": false,
+                "HasExternalDataSource": false,
+                "Hidden": true,
+                "Id": "51925dd7-2108-481a-b1ef-4bfa4e69d48b",
+                "ImageUrl": "/_layouts/15/images/itgen.gif?rev=26",
+                "IrmEnabled": false,
+                "IrmExpire": false,
+                "IrmReject": false,
+                "IsApplicationList": false,
+                "IsCatalog": false,
+                "IsPrivate": false,
+                "ItemCount": 3,
+                "LastItemDeletedDate": "2013-06-10T17:14:49Z",
+                "LastItemModifiedDate": "2013-06-10T17:20:48Z",
+                "ListItemEntityTypeFullName": "SP.Data.Access_x0020_RequestsItem",
+                "MultipleDataList": false,
+                "NoCrawl": true,
+                "ParentWebUrl": "/",
+                "ServerTemplateCanCreateFolders": true,
+                "TemplateFeatureId": "a0f12ee4-9b60-4ba4-81f6-75724f4ca973",
+                "Title": "Access Requests"
+            },
+            {
+                "__metadata": {
+                    "id": "https://<site url>/_api/Web/Lists(guid'482e418a-0900-414b-8902-02248c2e44e8')",
+                    "uri": "https://<site url>/_api/Web/Lists(guid'482e418a-0900-414b-8902-0 2248c2e44e8')",
+                    "etag": "\"1\"",
+                    "type": "SP.List"
+                },
+                "FirstUniqueAncestorSecurableObject": {
+                    "__deferred": {
+                        "uri": "https://<site url>/_api/Web/Lists(guid'482e418a-0900-414b-8902- 0 2248c2e44e8')/FirstUniqueAncestorSecurableObject"
+                    }
+                },
+                "RoleAssignments": {
+                    "__deferred": {
+                        "uri": "https://<site url>/_api/Web/Lists(guid'482e418a-0900-414b-8902-02248c2e44e8')/RoleAssignments"
+                    }
+                },
+                "ContentTypes": {
+                    "__deferred": {
+                        "uri": "https://<site url>/_api/Web/Lists(guid'482e418a-0900-414b-8902-02248c2e44e8')/ContentTypes"
+                    }
+                },
+                "DefaultView": {
+                    "__deferred": {
+                        "uri": "https://<site url>/_api/Web/Lists(guid'482e418a-0900-414b-8902-02248c2e44e8')/DefaultView"
+                    }
+                },
+                "EventReceivers": {
+                    "__deferred": {
+                        "uri": "https://<site url>/_api/Web/Lists(guid'482e418a-0900-414b-8902-02248c2e44e8')/EventReceivers"
+                    }
+                },
+                "Fields": {
+                    "__deferred": {
+                        "uri": "https://<site url>/_api/Web/Lists(guid'482e418a-0900-414b-8902-02248c2e44e8')/Fields"
+                    }
+                },
+                "Forms": {
+                    "__deferred": {
+                        "uri": "https://<site url>/_api/Web/Lists(guid'482e418a-0900-414b-8902-02248c2e44e8')/Forms"
+                    }
+                },
+                "InformationRightsManagementSettings": {
+                    "__deferred": {
+                        "uri": "https://<site url>/_api/Web/Lists(guid'482e418a-0900-414b-8902-02248c2e44e8')/InformationRightsManagementSettings"
+                    }
+                },
+                "Items": {
+                    "__deferred": {
+                        "uri": "https://<site url>/_api/Web/Lists(guid'482e418a-0900-414b-8902-02248c2e44e8')/Items"
+                    }
+                },
+                "ParentWeb": {
+                    "__deferred": {
+                        "uri": "https://<site url>/_api/Web/Lists(guid'482e418a-0900-414b-8902-02248c2e44e8')/ParentWeb"
+                    }
+                },
+                "RootFolder": {
+                    "__deferred": {
+                        "uri": "https://<site url>/_api/Web/Lists(guid'482e418a-0900-414b-8902-02248c2e44e8')/RootFolder"
+                    }
+                },
+                "UserCustomActions": {
+                    "__deferred": {
+                        "uri": "https://<site url>/_api/Web/Lists(guid'482e418a-0900-414b-8902-02248c2e44e8')/UserCustomActions"
+                    }
+                },
+                "Views": {
+                    "__deferred": {
+                        "uri": "https://<site url>/_api/Web/Lists(guid'482e418a-0900-414b-8902-02248c2e44e8')/Views"
+                    }
+                },
+                "WorkflowAssociations": {
+                    "__deferred": {
+                        "uri": "https://<site url>/_api/Web/Lists(guid'482e418a-0900-414b-8902-02248c2e44e8')/WorkflowAssociations"
+                    }
+                },
+                "AllowContentTypes": true,
+                "BaseTemplate": 100,
+                "BaseType": 0,
+                "ContentTypesEnabled": false,
+                "Created": "2013-02-02T21:11:56Z",
+                "DefaultContentApprovalWorkflowId": "00000000-0000-0000-0000-000000000000",
+                "Description": "",
+                "Direction": "none",
+                "DocumentTemplateUrl": null,
+                "DraftVersionVisibility": 0,
+                "EnableAttachments": true,
+                "EnableFolderCreation": false,
+                "EnableMinorVersions": false,
+                "EnableModeration": false,
+                "EnableVersioning": false,
+                "EntityTypeName": "AList",
+                "ForceCheckout": false,
+                "HasExternalDataSource": false,
+                "Hidden": false,
+                "Id": "482e418a-0900-414b-8902-02248c2e44e8",
+                "ImageUrl": "/_layouts/15/images/itgen.png?rev=23",
+                "IrmEnabled": false,
+                "IrmExpire": false,
+                "IrmReject": false,
+                "IsApplicationList": false,
+                "IsCatalog": false,
+                "IsPrivate": false,
+                "ItemCount": 3,
+                "LastItemDeletedDate": "2013-02-02T21:11:56Z",
+                "LastItemModifiedDate": "2013-06-26T22:31:03Z",
+                "ListItemEntityTypeFullName": "SP.Data.AListListItem",
+                "MultipleDataList": false,
+                "NoCrawl": false,
+                "ParentWebUrl": "/",
+                "ServerTemplateCanCreateFolders": true,
+                "TemplateFeatureId": "00bfea71-de22-43b2-a848-c05709900100",
+                "Title": "AList"
+            }
+        ]
+    }
+}

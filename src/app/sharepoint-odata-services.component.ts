@@ -9,6 +9,7 @@ import {ListItemsComponent} from './list-items';
 
 
 
+
 @Component({
   moduleId: module.id,
   selector: 'sharepoint-odata-services-app',

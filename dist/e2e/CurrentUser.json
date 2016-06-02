@@ -1,0 +1,28 @@
+{
+    "d": {
+        "__metadata": {
+            "id": "https://<My Site>/_api/Web/GetUserById(7002)",
+            "uri": "https://<My Site>/_api/Web/GetUserById(7002)",
+            "type": "SP.User"
+        },
+        "Groups": {
+            "__deferred": {
+                "uri": "https://<My Site>/_api/Web/GetUserById(7002)/Groups"
+            }
+        },
+        "Id": 7002,
+        "IsHiddenInUI": false,
+        "LoginName": "i:0#.w|mcw\\joe.smith",
+        "Title": "Smith CIV Joe B",
+        "PrincipalType": 1,
+        "Email": "joe.smith@company.com",
+        "IsSiteAdmin": false,
+        "UserId": {
+            "__metadata": {
+                "type": "SP.UserIdInfo"
+            },
+            "NameId": "s-1-5-21-904443456-698583360-712376642-176378",
+            "NameIdIssuer": "urn:office:idp:activedirectory"
+        }
+    }
+}

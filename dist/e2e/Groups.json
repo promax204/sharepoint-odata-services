@@ -1,0 +1,64 @@
+{
+    "d": {
+        "results": [
+            {
+                "__metadata": {
+                    "id": "https://<site url>/_api/Web/SiteGroups/GetById(7)",
+                    "uri": "https://<site url>/_api/Web/SiteGroups/GetById(7)",
+                    "type": "SP.Group"
+                },
+                "Owner": {
+                    "__deferred": {
+                        "uri": "https://<site url>/_api/Web/SiteGroups/GetById(7)/Owner"
+                    }
+                },
+                "Users": {
+                    "__deferred": {
+                        "uri": "https://<site url>/_api/Web/SiteGroups/GetById(7)/Users"
+                    }
+                },
+                "Id": 7,
+                "IsHiddenInUI": false,
+                "LoginName": "Excel Services Viewers",
+                "Title": "Excel Services Viewers",
+                "PrincipalType": 8,
+                "AllowMembersEditMembership": false,
+                "AllowRequestToJoinLeave": false,
+                "AutoAcceptRequestToJoinLeave": false,
+                "Description": "Members of this group can view pages, list items, and documents. If the document has a server rendering available, they can only view the document using the server rendering.",
+                "OnlyAllowMembersViewMembership": true,
+                "OwnerTitle": "Owners",
+                "RequestToJoinLeaveEmailSetting": null
+            },
+            {
+                "__metadata": {
+                    "id": "https://<site url>/_api/Web/SiteGroups/GetById(5)",
+                    "uri": "https://<site url>/_api/Web/SiteGroups/GetById(5)",
+                    "type": "SP.Group"
+                },
+                "Owner": {
+                    "__deferred": {
+                        "uri": "https://<site url>/_api/Web/SiteGroups/GetById(5)/Owner"
+                    }
+                },
+                "Users": {
+                    "__deferred": {
+                        "uri": "https://<site url>/_api/Web/SiteGroups/GetById(5)/Users"
+                    }
+                },
+                "Id": 5,
+                "IsHiddenInUI": false,
+                "LoginName": "Members",
+                "Title": "Members",
+                "PrincipalType": 8,
+                "AllowMembersEditMembership": false,
+                "AllowRequestToJoinLeave": false,
+                "AutoAcceptRequestToJoinLeave": false,
+                "Description": "Use this group to grant people contribute permissions to the SharePoint site: ",
+                "OnlyAllowMembersViewMembership": false,
+                "OwnerTitle": "Owners",
+                "RequestToJoinLeaveEmailSetting": ""
+            }
+        ]
+    }
+}
