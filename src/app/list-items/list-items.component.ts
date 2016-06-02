@@ -3,7 +3,7 @@ import {Observable} from 'rxjs/Observable';
 import {Subject} from 'rxjs/Subject';
 import {BehaviorSubject} from 'rxjs/BehaviorSubject';
 import { AsyncPipe, JsonPipe, COMMON_DIRECTIVES, FORM_DIRECTIVES } from '@angular/common';
-import {keys} from 'lodash';
+const keys = require('lodash/keys');
 
 import {HttpService} from '../http.service';
 import {ListItemFormComponent} from '../list-item-form';

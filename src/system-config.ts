@@ -8,7 +8,8 @@ const map: any = {
 
 /** User packages configuration. */
 const packages: any = {
-  'lodash': { main: 'index' },
+  // 'lodash': { main: 'index' },
+  'lodash': { main: 'keys' },
 };
 
 ////////////////////////////////////////////////////////////////////////////////////////////////

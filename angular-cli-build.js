@@ -12,10 +12,10 @@ module.exports = function (defaults) {
       'reflect-metadata/**/*.+(js|js.map)',
       'rxjs/**/*.+(js|js.map)',
       '@angular/**/*.+(js|js.map)',
+      'lodash/**/*.+(js|js.map)',
 
       'bootstrap/dist/css/**',
       'bootstrap/dist/fonts/**',
-      'lodash/**/*.js',
     ]
   });
 };
