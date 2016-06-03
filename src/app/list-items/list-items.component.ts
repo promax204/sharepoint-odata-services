@@ -20,7 +20,7 @@ import {ListItemFormComponent} from '../list-item-form';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ListItemsComponent implements OnInit {
-  listId = 'a290086b-2d43-4151-add4-893474a930a9';
+  listId = '664b4c04-8c23-4d43-9092-3f0cb265b860';
   keys: string[] = [];
   listItems$: Observable<any[]>;
   listName$ = new BehaviorSubject('');
@@ -46,7 +46,8 @@ export class ListItemsComponent implements OnInit {
     this.selectedListItem$.next('');
   }
   onSave(listItem: Object) {
-    this.httpService.saveListItem(listItem);
+    this.httpService.saveListItem(listItem)
+      .subscribe();
     this.onCancel();
   }
   selectListItem(listItem) {

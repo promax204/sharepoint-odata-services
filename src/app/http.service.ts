@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
-import {Http, Headers} from '@angular/http';
+import {Http, Headers, Response} from '@angular/http';
 import {Observable} from 'rxjs/Observable';
 import {BehaviorSubject} from 'rxjs/BehaviorSubject';
-
+const keys = require('lodash/keys')
 
 import {environment} from './environment';
 
@@ -119,9 +119,7 @@ export class HttpService {
   saveListItem(listItem: any) {
     if (environment.production) {
       const endpoint = listItem.__metadata.uri;
-      return this.post(endpoint, listItem, 'POST')
-        .map(response => response.json())
-        .map(this.stripJSONWrapper);
+      return this.post(endpoint, listItem, 'MERGE');
 
     } else {
       // Return saved record with updated modified date
@@ -133,27 +131,30 @@ export class HttpService {
 
 
   private post(endpoint: string, body: Object = '', method: 'POST' | 'DELETE' | 'MERGE' | 'PUT' = 'MERGE') {
+
     return this.requestDigest$
       .filter(requestDigest => !!requestDigest)
       .take(1)
       .flatMap(requestDigest => {
         
-        let bodyJson = JSON.stringify(body);
+        let bodyJson = JSON.stringify(strippedDeferredProperties(body));
 
         let headers = Object.assign({}, {
           'IF-MATCH': '*',
           'X-HTTP-Method': method,
           'X-RequestDigest': requestDigest,
-          'Content-Length': bodyJson.length
         }, defaultHeaders);
-
-        return this.http.post(endpoint, bodyJson, { headers: new Headers(headers) })
+        
+        return this.http
+          .post(endpoint, bodyJson, { headers: new Headers(headers) })
+          .retry(2);
       })
   }
 
   private getData(endpoint: string): Observable<any> {
     return this.http.get(endpoint, { headers: new Headers(defaultHeaders) })
       .map(response => response.json())
+      .retry(2)
       .map(this.stripJSONWrapper);
   }
 
@@ -166,3 +167,30 @@ export class HttpService {
   }
 
 }
+
+function strippedDeferredProperties(obj: any) {
+  let properties = keys(obj);
+
+  let strippedObj = properties.reduce((acc, key) => {
+    if (typeof obj[ key ] == 'object' && obj[ key ][ '__deferred' ]) {
+      // Don't include async properties.
+      return acc;
+    } else if (key === '__metadata') {
+      acc[ '__metadata' ] = { type: obj.__metadata.type };
+    } else {
+      acc[ key ] = obj[ key ];
+    }
+    return acc;
+  }, {});  
+  
+  return strippedObj;
+}
+
+// function validateResponse(response: Response) {
+//   console.log(response.text);
+//   return response.json;
+// }
+
+// function parseJSON(response: Response) {
+
+// }
